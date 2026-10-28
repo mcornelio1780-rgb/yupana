@@ -42,13 +42,22 @@ Busca `CONFIGURACIÓN: edita solo este bloque` dentro de `index.html`:
 
 ## Probar en tu computadora
 
-Las rutas empiezan con `/`, así que abre la carpeta con un servidor local en vez de hacer doble clic en el HTML:
+Puedes hacer doble clic en `index.html` siempre que la carpeta `assets/` esté al lado. Todas las rutas son relativas, así que también funciona en GitHub Pages y en Vercel.
+
+## Comprobar que subiste todo bien
+
+En GitHub, la raíz del repositorio debe verse así (no dentro de otra carpeta):
 
 ```
-python3 -m http.server 8000
+assets/
+404.html
+README.md
+index.html
+robots.txt
+vercel.json
 ```
 
-y entra a http://localhost:8000
+Y `assets/` debe tener tres carpetas: `fonts`, `img` y `video`. Si al abrir `https://TU-SITIO/assets/img/mineria.jpg` ves la foto, los recursos están publicados.
 
 ## Enlaces útiles
 
